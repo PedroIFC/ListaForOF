@@ -5,18 +5,15 @@
     //
     //Identifique APENAS os números INTEIROS e POSITIVOS. Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
 
-    //ENTRADA
-     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
-    let intplus = [];
-    for (let inteiros of listaDeNumeros) {
+    //
+     let listaNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+    let inteirosPositivos = [];
+    for (let inteiros of listaNumeros) {
         if (inteiros > 0 && Number.isInteger(inteiros)){
-            intplus.push(inteiros);
+            inteirosPositivos.push(inteiros);
         }
     } 
-    alert(`Foram localizados ${intplus.length} números. E estes são os pares: ${intplus.join(" - ")}`);
-    //PROCESSAMENTO
+    alert(`${inteirosPositivos.length} são os números inteiros positivos. E estes são os números pares: ${inteirosPositivos.join(" - ")}`);
 
-
-    //SAÍDA
 
 </script>

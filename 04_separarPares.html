@@ -5,21 +5,18 @@
     // 
     //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
 
-    //ENTRADA
-    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
-    let par = [];
-    for (let item of listaDeItens) {
-        if (item % 2 == 0) {
-            par.push(item);
+    //
+    let listaItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let pares = [];
+    for (let itens of listaItens) {
+        if (itens % 2 == 0) {
+            pares.push(itens);
         }
 
     }
-    alert(`Estes são os pares: ` + par);
-    alert(`Existem ${par.length} números pares nessa lista. `);
-    alert(`Existem ${listaDeItens.length} elementos nessa lista.`);
-    //PROCESSAMENTO
+    alert(`Números pares: ` + pares);
+    alert(`Esta lista tem ${pares.length} números pares. `);
+    alert(`Esta lista contém ${listaItens.length} elementos.`);
 
-
-    //SAÍDA
 
 </script>
